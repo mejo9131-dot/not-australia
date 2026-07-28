@@ -1,13 +1,10 @@
-import { useState } from 'react';
-function App() {
-  const [count, setCount] = useState(0);
-  return (
-    <div className="App">
-      <h1>Welcome to React</h1>
-      <button onClick={() => setCount((prev) => prev + 1)}>
-        Count: {count}
-      </button>
-    </div>
-  );
-}
-export default App;
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import './index.css'
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
